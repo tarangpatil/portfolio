@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-jet-brains: "JetBrains Mono", monospace;
+}
+* {
+  scroll-behavior: smooth;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.moving-gradient-rainbow:hover {
+  background: linear-gradient(
+    90deg,
+    var(--color-blue-200),
+    var(--color-green-200),
+    var(--color-red-200),
+    var(--color-green-200),
+    var(--color-blue-200)
+  );
+  background-size: 200% 200%;
+  animation: moveGradient 1s linear infinite;
+}
+
+/* .moving-gradient-peach {
+  background: linear-gradient(90deg, white, white, white, white, white);
+  background-size: 200% 200%;
+  animation: moveGradient 2s linear infinite;
+} */

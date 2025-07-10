@@ -35,7 +35,7 @@ terminalForm.addEventListener("submit", (e) => {
     if (value === "resume") {
       const a = document.createElement("a");
       a.href =
-        "https://drive.google.com/file/d/1NOS3u1zpTtb-9g4Tr_faGsDpEnWnyWs5/view";
+        "https://drive.google.com/file/d/1AmjmDgE4ZYARLwa8oeYLb3ViefLR_Sug/view?usp=sharing";
       a.target = "_blank";
       a.click();
     }
